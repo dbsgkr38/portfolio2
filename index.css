@@ -395,6 +395,12 @@ img {
     --percent-value: 75%;
   }
 
+  /* PORTFOLIO */
+
+    .portfolio__link{
+        line-height: 0.8;
+    }
+
 @media screen and (max-width: 768px) {
   .nav__menu {
     position: fixed;
