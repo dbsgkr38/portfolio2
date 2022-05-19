@@ -78,6 +78,8 @@ const showMenu = (toggleId, navId) => {
   })
   
   /*SCROLL SKILLS*/
+
+
   sr.reveal('.skills__subtitle', {})
   sr.reveal('.skills__name', {
     distance: '20px',
@@ -104,3 +106,9 @@ const showMenu = (toggleId, navId) => {
   sr.reveal('.contact__button', {
     delay: 600
   })
+
+
+
+  // scroll skill
+
+  AOS.init();

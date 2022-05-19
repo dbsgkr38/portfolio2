@@ -18,7 +18,7 @@
 /*===== Fuente y tipografia =====*/
 :root {
   --body-font: 'Montserrat', sans-serif;
-  --big-font-size: 6.25rem;
+  --big-font-size: 5.45rem;
   --h2-font-size: 1.25rem;
   --normal-font-size: .938rem;
   --small-font-size: .813rem;
@@ -145,255 +145,96 @@ img {
   align-items: center;
 }
 
+.nav__list{
+  position: fixed;
+  z-index: 1000;
+}
+
+.nav__list .nav__item a{
+  color: #111;
+}
+
 /* SKILLS */
-@property --percent-value {
-    syntax: "<percentage>";
-    inherits: false;
-    initial-value: 0%;
-  }
-  ody {
-    display: grid;
-    place-items: center;
-    height: 50vh;
-  }
-  
-  /* donut1 - html */
-  .donut1 {
-    margin: 0 auto;
-    position: relative;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    -webkit-margin-after: 5em;
-            margin-block-end: 5em;
-    /* background-image: linear-gradient(#8b8b8b, #8b8b8b); */
-    background-image: conic-gradient(#ad3636 0, #ff0000 var(--percent-value), transparent var(--percent-value));
-    /* color: white; */
-    transition: --percent-value 0.5s;
-    z-index: 1;
-  }
-  .donut1:after {
-    content: "";
-    /* background: #1571b3; */
-    position: absolute;
-    inset: 1.4rem;
-    border-radius: inherit;
-  }
-  .donut1:hover {
-    --percent-value: 90%;
-  }
-  
-  /* donut2 - css */
-  .donut2 {
-    margin: 0 auto;
-    position: relative;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    -webkit-margin-after: 5em;
-            margin-block-end: 5em;
-    /* background-image: linear-gradient(#8b8b8b, #8b8b8b); */
-    background-image: conic-gradient(#1b8311 0, #15610e var(--percent-value), transparent var(--percent-value));
-    /* color: white; */
-    transition: --percent-value 0.5s;
-    z-index: 1;
-  }
-  .donut2:after {
-    content: "";
-    /* background: #1571b3; */
-    position: absolute;
-    inset: 1.4rem;
-    border-radius: inherit;
-  }
-  .donut2:hover {
-    --percent-value: 90%;
-  }
 
-  /* donut3 - j-query */
+.flex-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+}
 
-  .donut3 {
-    margin: 0 auto;
-    position: relative;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    -webkit-margin-after: 5em;
-            margin-block-end: 5em;
-    /* background-image: linear-gradient(#8b8b8b, #8b8b8b); */
-    background-image: conic-gradient(#541081 0, #421064 var(--percent-value), transparent var(--percent-value));
-    /* color: white; */
-    transition: --percent-value 0.5s;
-    z-index: 1;
-  }
-  .donut3:after {
-    content: "";
-    /* background: #1571b3; */
-    position: absolute;
-    inset: 1.4rem;
-    border-radius: inherit;
-  }
-  .donut3:hover {
-    --percent-value: 83%;
-  }
+.single-chart {
+  width: 33%;
+  justify-content: space-around ;
+}
 
-  /* donut4 - javascript */
+.single-chart p{
+  text-align: center;
+}
 
-  .donut4 {
-    margin: 0 auto;
-    position: relative;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    -webkit-margin-after: 5em;
-            margin-block-end: 5em;
-    /* background-image: linear-gradient(#8b8b8b, #8b8b8b); */
-    background-image: conic-gradient(#8f0e39 0, #580924 var(--percent-value), transparent var(--percent-value));
-    /* color: white; */
-    transition: --percent-value 0.5s;
-    z-index: 1;
-  }
-  .donut4:after {
-    content: "";
-    /* background: #1571b3; */
-    position: absolute;
-    inset: 1.4rem;
-    border-radius: inherit;
-  }
-  .donut4:hover {
-    --percent-value: 75%;
-  }
+.circular-chart {
+  display: block;
+  margin: 10px auto;
+  max-width: 80%;
+  max-height: 250px;
+}
 
-  /* donut 5 - react */
+.circle-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 3.8;
+}
 
-  .donut5 {
-    margin: 0 auto;
-    position: relative;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    -webkit-margin-after: 5em;
-            margin-block-end: 5em;
-    /* background-image: linear-gradient(#8b8b8b, #8b8b8b); */
-    background-image: conic-gradient(#90921a 0, #5b5c15 var(--percent-value), transparent var(--percent-value));
-    /* color: white; */
-    transition: --percent-value 0.5s;
-    z-index: 1;
-  }
-  .donut5:after {
-    content: "";
-    /* background: #1571b3; */
-    position: absolute;
-    inset: 1.4rem;
-    border-radius: inherit;
-  }
-  .donut5:hover {
-    --percent-value: 50%;
-  }
+.circle {
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
 
-  /* donut6 - figma*/
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
 
-  .donut6 {
-    margin: 0 auto;
-    position: relative;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    -webkit-margin-after: 5em;
-            margin-block-end: 5em;
-    /* background-image: linear-gradient(#8b8b8b, #8b8b8b); */
-    background-image: conic-gradient(#5c963b 0, #3a5f25 var(--percent-value), transparent var(--percent-value));
-    /* color: white; */
-    transition: --percent-value 0.5s;
-    z-index: 1;
-  }
-  .donut6:after {
-    content: "";
-    /* background: #1571b3; */
-    position: absolute;
-    inset: 1.4rem;
-    border-radius: inherit;
-  }
-  .donut6:hover {
-    --percent-value: 90%;
-  }
+.circular-chart.orange .circle {
+  stroke: #ff9f00;
+}
 
-  /* donut7 - Photoshop */
+.circular-chart.green .circle {
+  stroke: #4CC790;
+}
 
-  .donut7 {
-    margin: 0 auto;
-    position: relative;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    -webkit-margin-after: 5em;
-            margin-block-end: 5em;
-    /* background-image: linear-gradient(#8b8b8b, #8b8b8b); */
-    background-image: conic-gradient(#da6522 0, #9e4b1b var(--percent-value), transparent var(--percent-value));
-    /* color: white; */
-    transition: --percent-value 0.5s;
-    z-index: 1;
-  }
-  .donut7:after {
-    content: "";
-    /* background: #1571b3; */
-    position: absolute;
-    inset: 1.4rem;
-    border-radius: inherit;
-  }
-  .donut7:hover {
-    --percent-value: 85%;
-  }
+.circular-chart.blue .circle {
+  stroke: #3c9ee5;
+}
 
-  /* donut8 - illust*/
+.circular-chart.purple .circle {
+  stroke: #ad3be2;
+}
 
-  .donut8 {
-    margin: 0 auto;
-    position: relative;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    -webkit-margin-after: 5em;
-            margin-block-end: 5em;
-    /* background-image: linear-gradient(#8b8b8b, #8b8b8b); */
-    background-image: conic-gradient(#24948e 0, #1a5f5c var(--percent-value), transparent var(--percent-value));
-    /* color: white; */
-    transition: --percent-value 0.5s;
-    z-index: 1;
-  }
-  .donut8:after {
-    content: "";
-    /* background: #1571b3; */
-    position: absolute;
-    inset: 1.4rem;
-    border-radius: inherit;
-  }
-  .donut8:hover {
-    --percent-value: 75%;
-  }
+.circular-chart.red .circle {
+  stroke: #d43232;
+}
+
+.circular-chart.peayl .circle {
+  stroke: #18a4a8;
+}
+
+.circular-chart.darkblue .circle {
+  stroke: #0f144e;
+}
+
+.circular-chart.black .circle {
+  stroke: #000000;
+}
+
+.percentage {
+  fill: #666;
+  font-family: sans-serif;
+  font-size: 0.5em;
+  text-anchor: middle;
+}
+
 
   /* PORTFOLIO */
 
@@ -556,6 +397,10 @@ img {
 
 /* ===== SKILLS =====*/
 
+#skills{
+  width: 100%;
+  max-width: 100%;
+}
 
 .skills__container {
   row-gap: 1rem;
@@ -589,254 +434,6 @@ img {
   border-radius: .5rem;
 }
 
-@property --percent-value {
-    syntax: "<percentage>";
-    inherits: false;
-    initial-value: 0%;
-  }
-  ody {
-    display: grid;
-    place-items: center;
-    height: 100vh;
-  }
-  
-  /* donut1 - html */
-  .donut1 {
-    margin: 0 auto;
-    position: relative;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    -webkit-margin-after: 5em;
-            margin-block-end: 5em;
-    /* background-image: linear-gradient(#8b8b8b, #8b8b8b); */
-    background-image: conic-gradient(#ad3636 0, #ff0000 var(--percent-value), transparent var(--percent-value));
-    /* color: white; */
-    transition: --percent-value 0.5s;
-    z-index: 1;
-  }
-  .donut1:after {
-    content: "";
-    /* background: #1571b3; */
-    position: absolute;
-    inset: 1.4rem;
-    border-radius: inherit;
-  }
-  .donut1:hover {
-    --percent-value: 90%;
-  }
-  
-  /* donut2 - css */
-  .donut2 {
-    margin: 0 auto;
-    position: relative;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    -webkit-margin-after: 5em;
-            margin-block-end: 5em;
-    /* background-image: linear-gradient(#8b8b8b, #8b8b8b); */
-    background-image: conic-gradient(#1b8311 0, #15610e var(--percent-value), transparent var(--percent-value));
-    /* color: white; */
-    transition: --percent-value 0.5s;
-    z-index: 1;
-  }
-  .donut2:after {
-    content: "";
-    /* background: #1571b3; */
-    position: absolute;
-    inset: 1.4rem;
-    border-radius: inherit;
-  }
-  .donut2:hover {
-    --percent-value: 90%;
-  }
-
-  /* donut3 - j-query */
-
-  .donut3 {
-    margin: 0 auto;
-    position: relative;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    -webkit-margin-after: 5em;
-            margin-block-end: 5em;
-    /* background-image: linear-gradient(#8b8b8b, #8b8b8b); */
-    background-image: conic-gradient(#541081 0, #421064 var(--percent-value), transparent var(--percent-value));
-    /* color: white; */
-    transition: --percent-value 0.5s;
-    z-index: 1;
-  }
-  .donut3:after {
-    content: "";
-    /* background: #1571b3; */
-    position: absolute;
-    inset: 1.4rem;
-    border-radius: inherit;
-  }
-  .donut3:hover {
-    --percent-value: 83%;
-  }
-
-  /* donut4 - javascript */
-
-  .donut4 {
-    margin: 0 auto;
-    position: relative;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    -webkit-margin-after: 5em;
-            margin-block-end: 5em;
-    /* background-image: linear-gradient(#8b8b8b, #8b8b8b); */
-    background-image: conic-gradient(#8f0e39 0, #580924 var(--percent-value), transparent var(--percent-value));
-    /* color: white; */
-    transition: --percent-value 0.5s;
-    z-index: 1;
-  }
-  .donut4:after {
-    content: "";
-    /* background: #1571b3; */
-    position: absolute;
-    inset: 1.4rem;
-    border-radius: inherit;
-  }
-  .donut4:hover {
-    --percent-value: 75%;
-  }
-
-  /* donut 5 - react */
-
-  .donut5 {
-    margin: 0 auto;
-    position: relative;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    -webkit-margin-after: 5em;
-            margin-block-end: 5em;
-    /* background-image: linear-gradient(#8b8b8b, #8b8b8b); */
-    background-image: conic-gradient(#90921a 0, #5b5c15 var(--percent-value), transparent var(--percent-value));
-    /* color: white; */
-    transition: --percent-value 0.5s;
-    z-index: 1;
-  }
-  .donut5:after {
-    content: "";
-    /* background: #1571b3; */
-    position: absolute;
-    inset: 1.4rem;
-    border-radius: inherit;
-  }
-  .donut5:hover {
-    --percent-value: 50%;
-  }
-
-  /* donut6 - figma*/
-
-  .donut6 {
-    margin: 0 auto;
-    position: relative;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    -webkit-margin-after: 5em;
-            margin-block-end: 5em;
-    /* background-image: linear-gradient(#8b8b8b, #8b8b8b); */
-    background-image: conic-gradient(#5c963b 0, #3a5f25 var(--percent-value), transparent var(--percent-value));
-    /* color: white; */
-    transition: --percent-value 0.5s;
-    z-index: 1;
-  }
-  .donut6:after {
-    content: "";
-    /* background: #1571b3; */
-    position: absolute;
-    inset: 1.4rem;
-    border-radius: inherit;
-  }
-  .donut6:hover {
-    --percent-value: 90%;
-  }
-
-  /* donut7 - Photoshop */
-
-  .donut7 {
-    margin: 0 auto;
-    position: relative;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    -webkit-margin-after: 5em;
-            margin-block-end: 5em;
-    /* background-image: linear-gradient(#8b8b8b, #8b8b8b); */
-    background-image: conic-gradient(#da6522 0, #9e4b1b var(--percent-value), transparent var(--percent-value));
-    /* color: white; */
-    transition: --percent-value 0.5s;
-    z-index: 1;
-  }
-  .donut7:after {
-    content: "";
-    /* background: #1571b3; */
-    position: absolute;
-    inset: 1.4rem;
-    border-radius: inherit;
-  }
-  .donut7:hover {
-    --percent-value: 85%;
-  }
-
-  /* donut8 - illust*/
-
-  .donut8 {
-    margin: 0 auto;
-    position: relative;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    -webkit-margin-after: 5em;
-            margin-block-end: 5em;
-    /* background-image: linear-gradient(#8b8b8b, #8b8b8b); */
-    background-image: conic-gradient(#24948e 0, #1a5f5c var(--percent-value), transparent var(--percent-value));
-    /* color: white; */
-    transition: --percent-value 0.5s;
-    z-index: 1;
-  }
-  .donut8:after {
-    content: "";
-    /* background: #1571b3; */
-    position: absolute;
-    inset: 1.4rem;
-    border-radius: inherit;
-  }
-  .donut8:hover {
-    --percent-value: 75%;
-  }
 
 /* ===== PORTFOLIO =====*/
 .portfolio {
@@ -1120,6 +717,14 @@ img {
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
   }
+
+
+  /* skills */
+
+  .skills__box{
+    width: 768px;
+    margin: auto;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -1131,9 +736,14 @@ img {
 
   /* skills */
 
-
+  .skills__box{
+    width: 1024px;
+    margin: auto;
+  }
 
   /* portfolio */
+
+
 
   .portfolio__link-name{
       margin-bottom: 10px;

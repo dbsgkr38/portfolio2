@@ -8,7 +8,15 @@
         <link rel="stylesheet" href="index.css">
 
         <!-- ===== BOX ICONS ===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link href ='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+
+        <!-- AOS : scroll -->
+
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
 
 
 
@@ -44,6 +52,7 @@
             <section class="home" id="home">
                 <div class="home__container bd-grid">
                     <h1 class="home__title"><span>Welcome!</span><br><span></span></h1>
+                    <!-- <p>항상 책임감을 가지고 배우고 동료와 함께 하는 즐거움을 아는 <br> 이윤학 입니다.</p> -->
 
                     <div class="home__scroll">
                         <a href="#about" class="home__scroll-link"><i class='bx bx-up-arrow-alt' ></i>Scroll down</a>
@@ -84,61 +93,184 @@
             </section>
 
             <!--===== SKILLS =====-->
+            
+           
+
             <section class="skills section" id="skills">
                 <h2 class="section-title">Skills</h2>
 
                 <div class="skills__container bd-grid">
                     <div class="skills__box">
+
+                        <!-- Development skils -->
                         <h3 class="skills__subtitle">Development Skils</h3>
-                        <span class="skills__name">
-                            <div onmouseover="this.innerHTML='90%'" onmouseout="this.innerHTML='Html'" title="90%" class="donut1">
-                                Html
-                            </div>
-                        </span>
-                        <span class="skills__name">
-                            <div onmouseover="this.innerHTML='90%'" onmouseout="this.innerHTML='Css'" title="90%" class="donut2">
-                                Css
-                            </div>
-                            
-                        </span>
-                        <span class="skills__name">
-                            <div onmouseover="this.innerHTML='83%'" onmouseout="this.innerHTML='J-query'" title="83%" class="donut3">
-                                J-query
-                            </div>
-                            
-                        </span>
-                        <span class="skills__name">
-                            <div onmouseover="this.innerHTML='75%'" onmouseout="this.innerHTML='Javascript'" title="75%" class="donut4">
-                                Javascript
-                            </div>
-                            
-                        </span>
-                        <span class="skills__name">
-                            <div onmouseover="this.innerHTML='50%'" onmouseout="this.innerHTML='React'" title="50%" class="donut5">
-                                React
+                        <div class="flex-wrapper">
+                            <div data-aos="zoom-in-down" data-aos-offset="200"
+                            data-aos-easing="ease-out-cubic"
+                            data-aos-duration="1500" class="single-chart" >
+                              <svg viewBox="0 0 36 36" class="circular-chart orange">
+                                <path class="circle-bg"
+                                  d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+                                <path class="circle"
+                                  stroke-dasharray="90, 100"
+                                  d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+                                <text x="18" y="20.35" class="percentage">90%</text>
+                              </svg>
+                              <p class="cart-name">Html</p>
                             </div>
                             
-                        </span>
-                        
+                            <div data-aos="zoom-in-down" data-aos-offset="200"
+                            data-aos-easing="ease-out-cubic"
+                            data-aos-duration="1500" class="single-chart">
+                              <svg viewBox="0 0 36 36" class="circular-chart green">
+                                <path class="circle-bg"
+                                  d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+                                <path class="circle"
+                                  stroke-dasharray="90, 100"
+                                  d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+                                <text x="18" y="20.35" class="percentage">90%</text>
+                              </svg>
+                              <p class="cart-name">CSS</p>
+                            </div>
+                          
+                            <div data-aos="zoom-in-down" data-aos-offset="200"
+                            data-aos-easing="ease-out-cubic"
+                            data-aos-duration="1500" class="single-chart">
+                              <svg viewBox="0 0 36 36" class="circular-chart blue">
+                                <path class="circle-bg"
+                                  d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+                                <path class="circle"
+                                  stroke-dasharray="85, 100"
+                                  d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+                                <text x="18" y="20.35" class="percentage">85%</text>
+                              </svg>
+                              <p class="cart-name">J-query</p>
+                            </div>
+
+                            <div data-aos="zoom-in-down" data-aos-offset="200"
+                            data-aos-easing="ease-out-cubic"
+                            data-aos-duration="1500" class="single-chart">
+                                <svg viewBox="0 0 36 36" class="circular-chart purple">
+                                  <path class="circle-bg"
+                                    d="M18 2.0845
+                                      a 15.9155 15.9155 0 0 1 0 31.831
+                                      a 15.9155 15.9155 0 0 1 0 -31.831"
+                                  />
+                                  <path class="circle"
+                                    stroke-dasharray="80, 100"
+                                    d="M18 2.0845
+                                      a 15.9155 15.9155 0 0 1 0 31.831
+                                      a 15.9155 15.9155 0 0 1 0 -31.831"
+                                  />
+                                  <text x="18" y="20.35" class="percentage">80%</text>
+                                </svg>
+                                <p class="cart-name">Javascript</p>
+                              </div>
+
+                              <div data-aos="zoom-in-down" data-aos-offset="200"
+                            data-aos-easing="ease-out-cubic"
+                            data-aos-duration="1500" class="single-chart">
+                                <svg viewBox="0 0 36 36" class="circular-chart red">
+                                  <path class="circle-bg"
+                                    d="M18 2.0845
+                                      a 15.9155 15.9155 0 0 1 0 31.831
+                                      a 15.9155 15.9155 0 0 1 0 -31.831"
+                                  />
+                                  <path class="circle"
+                                    stroke-dasharray="90, 100"
+                                    d="M18 2.0845
+                                      a 15.9155 15.9155 0 0 1 0 31.831
+                                      a 15.9155 15.9155 0 0 1 0 -31.831"
+                                  />
+                                  <text x="18" y="20.35" class="percentage">90%</text>
+                                </svg>
+                                <p class="cart-name">React</p>
+                              </div>
+                          </div>
+
+
+                          <!-- Design skills -->
+
                         <h3 class="skills__subtitle">Design Skills</h3>
-                        <span class="skills__name">
-                            <div onmouseover="this.innerHTML='90%'" onmouseout="this.innerHTML='React'" title="90%" class="donut6">
-                                Figma
+                        <div class="flex-wrapper">
+                            <div data-aos="zoom-in-down" data-aos-offset="200"
+                            data-aos-easing="ease-out-cubic"
+                            data-aos-duration="1500" class="single-chart">
+                              <svg viewBox="0 0 36 36" class="circular-chart peayl">
+                                <path class="circle-bg"
+                                  d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+                                <path class="circle"
+                                  stroke-dasharray="85, 100"
+                                  d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+                                <text x="18" y="20.35" class="percentage">85%</text>
+                              </svg>
+                              <p class="cart-name">figma</p>
                             </div>
                             
-                        </span>
-                        <span class="skills__name">
-                            <div onmouseover="this.innerHTML='80%'" onmouseout="this.innerHTML='React'" title="80%" class="donut7">
-                                Photoshop
+                            <div data-aos="zoom-in-down" data-aos-offset="200"
+                            data-aos-easing="ease-out-cubic"
+                            data-aos-duration="1500" class="single-chart">
+                              <svg viewBox="0 0 36 36" class="circular-chart darkblue">
+                                <path class="circle-bg"
+                                  d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+                                <path class="circle"
+                                  stroke-dasharray="75, 100"
+                                  d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+                                <text x="18" y="20.35" class="percentage">75%</text>
+                              </svg>
+                              <p class="cart-name">Photoshop</p>
                             </div>
-                            
-                        </span>
-                        <span class="skills__name">
-                            <div onmouseover="this.innerHTML='70%'" onmouseout="this.innerHTML='Illust'" title="70%" class="donut8">
-                                Illust
+                          
+                            <div data-aos="zoom-in-down" data-aos-offset="200"
+                            data-aos-easing="ease-out-cubic"
+                            data-aos-duration="1500" class="single-chart">
+                              <svg viewBox="0 0 36 36" class="circular-chart black">
+                                <path class="circle-bg"
+                                  d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+                                <path class="circle"
+                                  stroke-dasharray="65, 100"
+                                  d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+                                <text x="18" y="20.35" class="percentage">65%</text>
+                              </svg>
+                              <p class="cart-name">Illust</p>
                             </div>
-                            
-                        </span>
+                          </div>
                     </div>
 
                     <div class="skills__img">
@@ -227,22 +359,35 @@
                                 <button class="readme"> <a href="https://github.com/dbsgkr38/TODOLIST-G" target="_blank">README</a></button>
                                 </div>
                         </div>
-                    </div>
-                    <!-- <div class="portfolio__img">
-                        <img src="assets/img/work5.jpg" alt="">
-
-                        <div class="portfolio__link">
-                            <a href="#" class="portfolio__link-name">View details</a>
-                        </div>
-                    </div>
-                    <div class="portfolio__img">
-                        <img src="assets/img/work6.jpg" alt="">
-
-                        <div class="portfolio__link">
-                            <a href="#" class="portfolio__link-name">View details</a>
-                        </div>
-                    </div> -->
                 </div>
+                <!-- <p></p>
+                <p></p>
+                <p></p>
+                <p>Design</p>
+
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <div class="portfolio__img port-5">
+                    <p>LANDROVER</p>
+                    <img src="img/landrover.png" alt="landrover">
+
+                    <div class="portfolio__link">
+                        <a href="#" class="portfolio__link-name">LANDROVER</a> <br>
+                        <p> ● LANDROVER <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                            WEB 리뉴얼</p>
+                        <p> ● 제작기간 : 10일</p>
+                        <p> ● 작업기여도 : 100%</p>
+                        <p> ● 사용언어 : HTML, CSS, J-QUERY</p>
+                        <p> ● 작업범위 : 메인페이지</p>
+                        <div class="btn">
+                        <button class="git"> <a href="https://dbsgkr38.github.io/Landrover/" target="_blank">Github</a></button>
+                        <button class="readme"> <a href="https://github.com/dbsgkr38/Landrover" target="_blank">README</a></button>
+                        </div> -->
+                    </div>
+                </div>
+
             </section>
 
             <!--===== CONTACT =====-->
@@ -313,5 +458,7 @@
         <!--===== MAIN JS =====-->
         <script src="jquery-3.6.0.min.js"></script>
         <script src="index.js"></script>
+
+        
     </body>
 </html>
